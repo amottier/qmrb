@@ -1,0 +1,9 @@
+# Ignore Node node_modules folder
+node_modules/
+
+# sass cache
+.sass-cache/
+
+# Ignore build folder
+dist/
+build/
