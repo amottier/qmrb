@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Quel marabout ?</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="resources/css/jquery-ui-1.10.3.custom.css" />
+<link rel="stylesheet" href="resources/css/jquery.dataTables.css" />
+
+<link rel="stylesheet" href="resources/css/qmrb.css" />
+
+<!-- javascript -->
+<script type="text/javascript" src="resources/js/jquery-2.0.3.js"></script>
+<script type="text/javascript"
+	src="resources/js/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="resources/js/qmrb.js"></script>
+<script type="text/javascript" src="resources/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript">
+	injectServiceCehckboxes();
+	injectResultTimeframeSlider();
+</script>
+
+</head>
+<body>
+	<div id="content">
+		<div id="filters">
+			<form id="searchForm">
+				<div class="filter" id="services">
+					<h2>Quelles compétences ?</h2>
+					<div class="desc">Tous les marabouts n'ont pas le même
+						domaine d'expertise. Veuillez sélectionner ci-dessous les
+						compétences que vous recherchez.</div>
+
+					<div class="widget"></div>
+				</div>
+				<div class="filter" id="guaranty">
+					<h2>Avec guarantie ?</h2>
+					<div class="desc">Tous les marabouts ne se valent pas. Pour
+						vos demandes critiques, pensez à la garantie.</div>
+					<div class="widget">
+						<label><input type="radio" name="guaranty" value="false" />Indifférent</label>
+						<label><input type="radio" name="guaranty" value="true" />Nombre
+							de jours maximum pour résultats :</label>
+						<div id="slider"></div>
+					</div>
+				</div>
+				<div class="filter" id="experience">
+					<h2>Avec expérience ?</h2>
+					<div class="desc">La qualité des résultats est souvent
+						synonime de nombreuses années d'expériences.</div>
+					<div class="widget"></div>
+				</div>
+				<div class="filter" id="contact">
+					<h2>Moyens d'échanges</h2>
+					<div class="desc">Les moyens d'échanges avec le marabout sont
+						variés. Dans tous les cas cela reste particulièrement discret.</div>
+					<div class="widget"></div>
+				</div>
+				<div id="searchValidation">
+					<input id="searchButton" type="submit" value="Search" />
+				</div>
+			</form>
+			<script type="text/javascript">
+				injectFormSubmissionHandler();
+			</script>
+		</div>
+		<div id="results">
+		<table id="resultsTable">
+		
+		</table>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context>
+
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+	<Resource name="jdbc/qmrbds" auth="Container" type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30" maxWait="10000" username="qmrbuser"
+		password="toto" driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/qmrbdb" />
+</Context>
